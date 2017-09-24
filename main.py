@@ -28,7 +28,7 @@ form ="""
     </head>
     <body>
 
-        <form action="/encrypt method="POST">
+        <form action="/encrypt" method="POST">
         
             <lable for="rot">Rotate by:</lable>
                 <input type="text" value="0" name="rot"></input>
