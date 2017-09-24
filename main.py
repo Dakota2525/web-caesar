@@ -45,8 +45,8 @@ form ="""
 @app.route("/encrypt", methods=['POST']) 
 def encrypt():
     text = request.form['text']
-    rot = int(rot)
     rot = request.form['rot']
+    rot = int(rot)
     encrypted_text = rotate_string(text, rot)
     return form.format(encrypted_text) 
 
